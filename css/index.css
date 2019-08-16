@@ -325,18 +325,29 @@ footer {
   display: flex;
   flex-flow: column wrap;
 }
+.blog-content .post {
+  border-bottom: 2px dashed #81848E;
+  padding: 15px;
+}
 .blog-content .post .post-content {
   width: 50%;
+  display: flex;
+  flex-flow: column wrap;
+}
+.blog-content .post .post-content.post-img {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
 }
 .blog-content .post:nth-of-type(odd) {
-  border: 1px solid red;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
+  align-items: center;
 }
 .blog-content .post:nth-of-type(even) {
-  border: 1px solid green;
   display: flex;
   flex-flow: row-reverse wrap;
   justify-content: space-evenly;
+  align-items: center;
 }
