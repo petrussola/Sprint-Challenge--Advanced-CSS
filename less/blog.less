@@ -1,0 +1,20 @@
+.blog-content {
+    .flexPositioning(column);
+    
+    .post {
+        .post-content {
+            width: 50%;
+        }
+    }
+
+    .post:nth-of-type(odd) {
+        .testBorder(red);
+        .flexPositioning(row);
+        justify-content: space-evenly;
+    }
+    .post:nth-of-type(even){
+        .testBorder(green);
+        .flexPositioning(row-reverse);
+        justify-content: space-evenly;
+    }
+}

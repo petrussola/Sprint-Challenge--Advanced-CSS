@@ -321,3 +321,22 @@ footer {
 .home .invisible {
   display: none;
 }
+.blog-content {
+  display: flex;
+  flex-flow: column wrap;
+}
+.blog-content .post .post-content {
+  width: 50%;
+}
+.blog-content .post:nth-of-type(odd) {
+  border: 1px solid red;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+}
+.blog-content .post:nth-of-type(even) {
+  border: 1px solid green;
+  display: flex;
+  flex-flow: row-reverse wrap;
+  justify-content: space-evenly;
+}
