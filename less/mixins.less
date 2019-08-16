@@ -21,3 +21,13 @@
     background-color: @color;
     text-align: center;
 }
+
+.elementaryButtonHover(@width, @color, @opacity) {
+    width: @width;
+    font-size: 1.8rem;
+    padding: 8px 10px;
+    border-radius: 5px;
+    color: white;
+    background-color: lighten(@color, @opacity);
+    text-align: center;
+}
