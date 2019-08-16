@@ -192,6 +192,10 @@ footer {
   justify-content: center;
   align-items: center;
 }
+.home .jumbotron img {
+  width: 100%;
+  height: auto;
+}
 .home .jumbotron h2 {
   padding: 15px;
 }
