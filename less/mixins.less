@@ -12,22 +12,12 @@
     padding: 15px;
 }
 
-.elementaryButton(@width, @fontColor, @backgroundColor) {
+.elementaryButton(@width, @paddingTopDown, @fontColor, @backgroundColor) {
     width: @width;
     font-size: 1.8rem;
-    padding: 8px 10px;
+    padding: @paddingTopDown 10px;
     border-radius: 5px;
     color: @fontColor;
     background-color: @backgroundColor;
-    text-align: center;
-}
-
-.elementaryButtonHover(@width, @color, @opacity) {
-    width: @width;
-    font-size: 1.8rem;
-    padding: 8px 10px;
-    border-radius: 5px;
-    color: white;
-    background-color: lighten(@color, @opacity);
     text-align: center;
 }
