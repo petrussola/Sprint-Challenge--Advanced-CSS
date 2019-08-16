@@ -318,3 +318,6 @@ footer {
   height: auto;
   border-radius: 10px;
 }
+.home .invisible {
+  display: none;
+}
