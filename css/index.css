@@ -160,10 +160,11 @@ p {
   width: 100%;
   margin: 0 auto;
 }
-.header {
+header {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
+  border: 1px solid red;
 }
 footer {
   color: #22283B;
