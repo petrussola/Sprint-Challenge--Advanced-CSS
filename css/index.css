@@ -181,6 +181,11 @@ header nav {
 }
 header nav p {
   padding: 0 15px;
+  transition: 0.5s;
+}
+header nav p:hover {
+  background: #5E6164;
+  color: #F6F6F6;
 }
 footer {
   color: #22283B;
