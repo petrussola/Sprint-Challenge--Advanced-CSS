@@ -9,7 +9,8 @@
             .flexPositioning(column);
 
             @media @mobile {
-                width: 40%;
+                padding: 15px;
+                width: 100%;
             }
         }
 
@@ -28,6 +29,9 @@
         .flexPositioning(row);
         justify-content: space-evenly;
         align-items: center;
+        @media @mobile {
+            .flexPositioning(column);
+        }
     }
     .post:nth-of-type(even){
         .flexPositioning(row-reverse);
