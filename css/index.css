@@ -339,10 +339,19 @@ footer {
   display: flex;
   flex-flow: column wrap;
 }
+@media (max-width: 500px) {
+  .blog-content .post .post-content {
+    width: 40%;
+  }
+}
 .blog-content .post .post-content.post-img {
   display: flex;
   flex-flow: column wrap;
   align-items: center;
+}
+.blog-content .post .post-content.post-img img {
+  width: 100%;
+  height: auto;
 }
 .blog-content .post:nth-of-type(odd) {
   display: flex;

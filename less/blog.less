@@ -7,11 +7,19 @@
         .post-content {
             width: 50%;
             .flexPositioning(column);
+
+            @media @mobile {
+                width: 40%;
+            }
         }
 
         .post-content.post-img {
             .flexPositioning(column);
             align-items: center;
+            img {
+                width: 100%;
+                height: auto;
+            }
 
         }
     }
