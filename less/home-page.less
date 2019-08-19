@@ -1,13 +1,19 @@
 // Home Content
 
+
 .home {
-
-  .intro {
-
-    h2 {
-      padding: 15px;
+  
+  .jumbotron {
+    
+    img {
+      width: 100%;
+      height: auto;
     }
-
+    
+    h2 {
+      .paddingElementary();
+    }
+    
     p {
       padding:0 15px;
     }
@@ -24,11 +30,24 @@
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+
+      &.sky, &.launch {
+        @media @mobile {
+          display: none; 
+        }
+      }
+      &.blast {
+        @media @mobile {
+          width: 100%;
+          height: auto;
+          // margin: 20px 0;
+        }
+      }
     }
   }
 
   .visit-planets {
-    padding: 15px;
+    .paddingElementary();
 
     h3 {
       margin-top: 11px;
@@ -45,9 +64,19 @@
     padding: 50px 60px;
     display: flex;
     justify-content: center;
+    @media @mobile {
+      flex-flow: column-reverse wrap;
+      padding: 10px;
+      margin-top: 25px;
+    }
 
     .walk-text {
       width: 50%;
+
+      @media @mobile {
+        width: 100%;
+        padding: 15px 0;
+      }
 
       h3 {
         margin-bottom: 10px;
@@ -58,12 +87,27 @@
       }
 
       .btn {
+        .elementaryButton(30%, 8px, white, #22283A);
+        @media @mobile {
+          .elementaryButton(100%, 30px, white, #22283A);
+        }
+
+        &:hover {
+          .elementaryButton(30%, 8px, #22283A, white);
+          @media @mobile {
+            .elementaryButton(30%, 30px, #22283A, white);
+          }
+        }
       }
     }
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
+      @media @mobile {
+        width: 100%;
+        margin-left: inherit;
+      }
       
       img {
         width: 100%;
@@ -71,5 +115,10 @@
         border-radius: 10px;
       }
     }
+  } // walk
+
+  
+  .invisible {
+    display: none;
   }
 }// home

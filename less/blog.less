@@ -1,0 +1,41 @@
+.blog-content {
+    .flexPositioning(column);
+    
+    .post {
+        border-bottom: 2px dashed @waterloo;
+        padding: 15px;
+        .post-content {
+            width: 50%;
+            .flexPositioning(column);
+
+            @media @mobile {
+                padding: 15px;
+                width: 100%;
+            }
+        }
+
+        .post-content.post-img {
+            .flexPositioning(column);
+            align-items: center;
+            img {
+                width: 100%;
+                height: auto;
+            }
+
+        }
+    }
+
+    .post:nth-of-type(odd) {
+        .flexPositioning(row);
+        justify-content: space-evenly;
+        align-items: center;
+        @media @mobile {
+            .flexPositioning(column);
+        }
+    }
+    .post:nth-of-type(even){
+        .flexPositioning(row-reverse);
+        justify-content: space-evenly;
+        align-items: center;
+    }
+}

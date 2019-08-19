@@ -1,1 +1,23 @@
 // Mixins Here
+.testBorder(@color) {
+    border: 1px solid @color;
+}
+
+.flexPositioning(@direction){
+    display: flex;
+    flex-flow: @direction wrap;
+}
+
+.paddingElementary() {
+    padding: 15px;
+}
+
+.elementaryButton(@width, @paddingTopDown, @fontColor, @backgroundColor) {
+    width: @width;
+    font-size: 1.8rem;
+    padding: @paddingTopDown 10px;
+    border-radius: 5px;
+    color: @fontColor;
+    background-color: @backgroundColor;
+    text-align: center;
+}
